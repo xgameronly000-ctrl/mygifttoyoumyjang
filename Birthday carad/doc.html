@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="stykes.css" />
+</head>
+<body>
+
+<!-- PIN SCREEN -->
+<div id="pinScreen" class="pin-screen">
+  <h2>Enter BDAY PIN </h2>
+  <input type="password" id="pinInput" maxlength="6" readonly />
+
+  <div class="keypad">
+    <button onclick="addPin(1)">1</button>
+    <button onclick="addPin(2)">2</button>
+    <button onclick="addPin(3)">3</button>
+
+    <button onclick="addPin(4)">4</button>
+    <button onclick="addPin(5)">5</button>
+    <button onclick="addPin(6)">6</button>
+
+    <button onclick="addPin(7)">7</button>
+    <button onclick="addPin(8)">8</button>
+    <button onclick="addPin(9)">9</button>
+
+    <button onclick="clearPin()">⌫</button>
+    <button onclick="addPin(0)">0</button>
+    <button onclick="checkPin()">✔</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="title">HAPPY BIRTHDAY!</div>
+
+  <div class="banner">
+    <image src="image/fa26cb31-e1a4-4215-9e79-085aa0c3c071.jfif">
+  </div>
+
+  <div class="buttons">
+    <button onclick="showSection('videos')">videos</button>
+    <button onclick="showSection('pictures')">pictures</button>
+    <button onclick="showSection('readme')">Read Me</button>
+  </div>
+
+ <!-- VIDEOS SECTION -->
+<div id="videos" class="content">
+
+  <div class="photo-booth-bg">
+    <div class="photo-booth-wrapper">
+      <div class="photo-booth">
+        <h3>🎥 Video Booth</h3>
+
+        <div class="photo-strip">
+          <video controls src="image/0fac0c53-227f-43db-a843-65045dbad203.mp4"></video>
+          <video controls src="image/204e2236-2d9e-4854-bbba-7b3a1cdb71ce.mp4"></video>
+          <video controls src="image/4c52631b-10a6-4676-b840-c30adc7927cf.mp4"></video>
+          <video controls src="image/b77a42ac-d15b-4416-b4af-22e4a7b94fd8.mp4"></video>
+        </div>
+
+        <div class="photo-booth-footer">Made by your Lovey</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- PICTURES SECTION -->
+<div id="pictures" class="content">
+
+  <div class="photo-booth-bg">
+    <div class="photo-booth-wrapper">
+      <div class="photo-booth">
+        <h3>📸 Photo Booth</h3>
+
+        <div class="photo-strip">
+          <img src="image/05deef15-783c-4037-af9f-ebe6824abb61.jfif">
+          <img src="image/31f0a053-3229-402a-9a33-76a4ac38572a.jfif">
+          <img src="image/9abd0630-e5fc-41ac-b87b-71d3b7972c84.jfif">
+          <img src="image/1913ab3b-516f-4982-85d8-f4b831508ebb.jfif">
+          <img src="image/3dccd648-f5f5-4127-8e88-b0abaa1125a6.jfif">
+          <img src="image/c1d57d3f-362d-4668-9473-1697d43d2d3b.jfif">
+        </div>
+
+        <div class="photo-booth-footer"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <!-- README -->
+  <div id="readme" class="content">
+    <div class="cake">🎂</div>
+    <audio id="bg-music" autoplay loop muted>
+  <source src="image/audio.mp3" type="audio/mp3">
+</audio>
+    <p>wefwFW</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
